@@ -1,6 +1,12 @@
 <?php
+//Menambah data ke todolist
+function AddTodoList(string $todo){
 
-function AddTodoList(){
+    global $todolist;
+
+    $number = sizeof($todolist)+1;
+
+    $todolist[$number] = $todo;
 
     
 }
